@@ -1,4 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
+  body {
+    color: #5D6063;
+    background-color: rgb(243, 243, 243);
+    font-family: "helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
 .container {
     display: flex;
@@ -25,10 +41,21 @@
     flex-direction: column;
 }
 
-.formPane, .formContainer{
-    padding-top: 5%;
-    padding-bottom: 5%;
+.formPane, .buttonContainer {
+    background-color: rgb(243, 243, 243);
 }
+
+.formPane {
+    width: 80%;
+    height: 20vh;
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
 
 
 .containerOfLogoContainer {
@@ -52,6 +79,97 @@
 
 }
 
+.formContainer {
+  position: relative;
+  padding-left: 60px;
+  background-color: #FFFFFF;
+  
+  box-shadow: 1px 4px 2px -2px lightgray;
+}
+
+.formContainer p {
+  padding: 30px 0;
+  font-size: 24px;
+}
+
+.sign-up-form {
+  width: 90%;
+  margin: 0 0 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-row {
+  margin-right: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type='text'],
+.form-row input[type='tel'],
+.form-row input[type='password'],
+.form-row input[type='email'] {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row input[type='text']:focus,
+.form-row input[type='tel']:focus,
+.form-row input[type='password']:focus,
+.form-row input[type='email']:focus {
+  background-color: #FFFFFF;
+  border: 1px solid blue;
+  box-shadow: 4px 4px 4px -4px grey;
+  
+}
+
+.form-row input[type='text']:invalid,
+.form-row input[type='tel']:invalid,
+.form-row input[type='password']:invalid,
+.form-row input[type='email']:invalid {
+  background-color: #FFFFFF;
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none;
+}
+
+
+
+.buttonContainer {
+  padding-top: 50px;
+  padding-left: 60px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-grow: 0;
+  flex-direction: column;
+}
+
+.buttonContainer button {
+  align-self: start;
+  font-size: 16px;
+  font-weight: bold;
+ 
+  color: #FFFFFF;
+  background-color: #596D48;
+ 
+  border: none;
+  border-radius: 3px;
+ 
+  padding: 10px 40px;
+  margin-bottom: 20px;
+  cursor: pointer;
+ 
+
+}
+
 @media only screen and (min-width: 700px) {
     .container {
         flex-direction: row;
@@ -59,7 +177,7 @@
     
     .leftPane {
         height: 100vh;
-        width: 30vw;
+        width: 34vw;
         background-image: url('Fabrice Villard.avif');
         background-position: 1100px 1800px;
         display: flex;
@@ -69,7 +187,7 @@
     }
 
     .containerOfLogoContainer {
-        width: 30vw;
+        width: 66vw;
         height: 23%;
         background-color: rgba(0, 0, 0, 0.6);
         display: flex;
@@ -78,8 +196,6 @@
         justify-content: center;
         
     }
-    
-    
     
     .container {
         flex-direction: row;
@@ -90,8 +206,20 @@
         padding-bottom: 0%;
     }
 
+    .formPane {
+      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
     .rightPane{
         justify-content: flex-start;
     }
 
+    .sign-up-form {
+      width: 60%;
+    }
 }
+
+  

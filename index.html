@@ -18,43 +18,48 @@
             
         </div>
         <div class="rightPane">
-            <div class="formPane">This is not a real online service! You know you need something
+            <div class="formPane"><p>This is not a real online service! You know you need something
                 like this in your life to help you realize your deepest dreams.
-                Sign up now to get started.
-    
-                You know you want to.
+                Sign up <i>now</i> to get started.</p>
+                <br>
+                <p>You <i>know</i> you want to.</p>
             </div>
             <div class="formContainer">
-                <div class="form-row">
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="full-name">
-                </div>
-                <div class="form-row">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" name="last-name" id="last-name">
-                </div>
-                <div class="form-row">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div class="form-row">
-                    <label for="phone-number">Phone Number</label>
-                    <input type="nummer" name="phone-number" id="phone-number">
-                </div>
-                <div class="form-row">
-                    <label for="password">Password</label>
-                    <input type="text" name="password" id="password">
-                </div>
-                <div class="form-row">
-                    <label for="confirm password">Confirm Password</label>
-                    <input type="text" name="confirm-password" id="confirm-password">
-                </div>
+                <p>Let's do this!</p>
+                <form action="" class="sign-up-form">
+                    <div class="form-row">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="full-name">
+                    </div>
+                    <div class="form-row">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-row">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{4}-[0-9]{6}"
+                        title="Phone number must be four numbers followed by a dash and then six numbers more">
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password</label>
+                        <input required type="password" name="password" id="password">
+                    </div>
+                    <div class="form-row">
+                        <label for="confirm password">Confirm Password</label>
+                        <input required type="password" name="confirm-password" id="confirm-password">
+                    </div>
+                </form>
+                
 
             </div>
             <div class="buttonContainer">
                 <button>Create Account</button>
 
-                <p>Already have an account? <a>Log in</a></p>
+                <p>Already have an account? <a href="www.theodinproject.com">Log in</a></p>
 
             </div>
         </div>
