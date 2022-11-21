@@ -144,8 +144,17 @@
 
 
 
+input:invalid + div::after {
+  font-size: 0.7rem;
+  content: "*Password do not match";
+  color: rgb(255, 0, 0);
+  
+}
+
+
+
 .buttonContainer {
-  padding-top: 50px;
+  padding-top: 3vh;
   padding-left: 3vw;
   margin-bottom: 10px;
   display: flex;
@@ -225,10 +234,6 @@
       width: 60%;
     }
   
-    .buttonContainer{
-      padding: ;
-      flex-grow: 0;
-    }
 }
 
   
